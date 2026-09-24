@@ -97,7 +97,10 @@ class ERPApplication(tk.Tk):
         super().__init__()
         
         self.title("Indian SMB ERP - Enterprise Edition")
-        self.state('zoomed')  # Maximize
+        try:
+            self.state('zoomed')  # Maximize (Windows)
+        except Exception:
+            self.attributes('-zoomed', True)  # Linux/X11 maximize fallback
         self.protocol("WM_DELETE_WINDOW", self.on_close)
         
         # Initialize Theme
