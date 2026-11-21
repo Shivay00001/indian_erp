@@ -1,5 +1,7 @@
 # Indian SMB ERP (Enterprise Edition)
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 Desktop GUI app (tkinter). Modular ERP with licensing, inventory, and billing; SQLite storage; login via bcrypt-hashed credentials.
 
 ## Run
